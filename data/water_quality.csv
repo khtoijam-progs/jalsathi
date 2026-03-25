@@ -1,0 +1,501 @@
+district,ph,tds_mg_l,turbidity_ntu,nitrate_mg_l,coliform_mpn,quality_label
+Vijayawada,7.07,262.3,0.78,7.26,1.46,Safe
+Vijayawada,5.65,533.5,1.44,5.31,6.5,Contaminated
+Vijayawada,8.11,376.9,8.65,4.09,4.11,Moderate Risk
+Vijayawada,6.13,340.66,6.28,1.72,3.04,Contaminated
+Vijayawada,8.47,531.51,1.45,20.33,4.2,Moderate Risk
+Vijayawada,6.62,384.75,1.87,17.19,4.77,Safe
+Vijayawada,7.18,591.79,0.38,0.14,1.81,Moderate Risk
+Vijayawada,7.99,500.41,1.05,6.84,2.73,Moderate Risk
+Vijayawada,6.06,328.52,0.44,2.19,0.28,Contaminated
+Vijayawada,6.02,553.38,10.85,2.15,2.12,Contaminated
+Vijayawada,9.03,680.12,3.18,4.89,5.21,Contaminated
+Vijayawada,8.93,120.78,6.56,1.11,8.65,Contaminated
+Vijayawada,6.82,204.31,1.14,5.11,0.82,Safe
+Vijayawada,8.34,402.52,1.75,6.75,9.44,Safe
+Vijayawada,7.13,681.98,0.89,21.62,4.3,Moderate Risk
+Vijayawada,6.62,268.7,4.88,0.45,24.2,Safe
+Vijayawada,7.43,345.46,1.51,6.78,10.63,Safe
+Vijayawada,8.02,44.7,0.15,0.02,1.4,Safe
+Vijayawada,6.6,454.07,0.36,5.29,5.22,Safe
+Vijayawada,6.52,484.36,0.25,28.2,1.51,Safe
+Vijayawada,6.72,474.67,5.17,14.66,4.54,Moderate Risk
+Vijayawada,6.22,273.99,0.39,7.13,4.4,Contaminated
+Vijayawada,6.89,69.21,1.36,10.24,11.58,Safe
+Vijayawada,6.89,235.38,0.46,9.81,6.53,Safe
+Vijayawada,7.07,446.24,9.0,0.65,4.62,Moderate Risk
+Vijayawada,8.83,453.73,5.34,1.63,0.2,Contaminated
+Vijayawada,6.91,511.27,0.41,6.32,4.56,Moderate Risk
+Vijayawada,7.14,331.58,6.76,40.54,5.07,Moderate Risk
+Vijayawada,6.23,408.51,7.64,14.17,6.58,Contaminated
+Vijayawada,6.47,496.14,0.71,11.66,1.24,Contaminated
+Vijayawada,8.36,352.74,4.6,6.04,7.86,Safe
+Vijayawada,7.56,548.16,0.78,3.2,1.89,Moderate Risk
+Vijayawada,6.92,312.13,0.71,6.08,11.95,Safe
+Vijayawada,7.45,317.39,3.49,1.01,12.79,Safe
+Vijayawada,5.64,546.77,4.24,2.98,5.91,Contaminated
+Vijayawada,8.86,282.05,0.75,11.3,7.4,Contaminated
+Vijayawada,9.06,320.66,1.83,22.45,3.44,Contaminated
+Vijayawada,7.52,468.56,1.59,2.61,2.61,Safe
+Vijayawada,6.79,492.85,2.23,16.4,2.18,Safe
+Vijayawada,6.17,507.56,0.35,15.82,0.52,Contaminated
+Vijayawada,7.75,333.28,1.28,36.14,19.49,Safe
+Vijayawada,6.85,671.14,0.32,12.29,0.16,Moderate Risk
+Vijayawada,7.09,375.24,9.68,11.81,8.08,Moderate Risk
+Vijayawada,5.88,244.83,0.8,6.55,4.01,Contaminated
+Vijayawada,6.12,510.17,8.91,1.86,16.86,Contaminated
+Vijayawada,7.19,348.59,1.22,5.96,4.23,Safe
+Vijayawada,5.61,175.12,3.96,11.58,8.96,Contaminated
+Vijayawada,7.7,186.22,2.64,4.62,3.33,Safe
+Vijayawada,6.54,335.98,0.72,1.12,5.75,Safe
+Vijayawada,7.52,421.17,3.92,0.53,10.78,Safe
+Guntur,7.06,564.77,2.64,37.33,3.8,Moderate Risk
+Guntur,6.99,199.44,2.64,16.94,22.22,Safe
+Guntur,6.79,381.02,4.85,9.27,1.11,Safe
+Guntur,8.56,394.55,4.41,6.92,1.82,Contaminated
+Guntur,5.93,300.3,3.94,2.77,0.94,Contaminated
+Guntur,5.73,439.07,2.97,1.25,5.32,Contaminated
+Guntur,6.91,475.64,4.52,9.38,17.69,Safe
+Guntur,8.39,245.13,0.2,5.05,16.6,Safe
+Guntur,5.76,449.72,0.38,12.16,5.18,Contaminated
+Guntur,7.59,379.31,0.07,3.62,12.7,Safe
+Guntur,6.29,276.73,2.29,17.36,0.54,Contaminated
+Guntur,7.66,270.91,1.46,5.15,7.65,Safe
+Guntur,6.7,7.28,1.42,4.51,0.27,Safe
+Guntur,6.7,674.4,0.65,16.93,8.11,Moderate Risk
+Guntur,5.68,380.76,3.05,3.4,1.35,Contaminated
+Guntur,6.85,310.69,8.25,7.34,2.27,Moderate Risk
+Guntur,6.98,545.53,1.22,2.32,2.37,Moderate Risk
+Guntur,8.11,223.07,1.03,8.61,0.34,Safe
+Guntur,6.9,209.58,8.29,4.74,5.45,Moderate Risk
+Guntur,6.75,344.44,0.18,3.64,0.86,Safe
+Guntur,7.62,300.48,0.05,8.16,2.39,Safe
+Guntur,9.49,444.74,1.13,3.5,6.61,Contaminated
+Guntur,7.0,444.21,0.31,22.81,2.15,Safe
+Guntur,5.55,513.11,0.4,8.9,3.72,Contaminated
+Guntur,7.02,188.95,4.78,8.93,0.51,Safe
+Guntur,8.66,464.69,4.72,9.92,0.83,Contaminated
+Guntur,8.0,577.28,0.07,5.31,2.02,Moderate Risk
+Guntur,6.32,498.9,2.68,24.44,7.99,Contaminated
+Guntur,8.05,361.29,0.87,39.65,4.76,Safe
+Guntur,7.65,295.6,0.07,16.98,0.07,Safe
+Guntur,6.22,613.69,2.84,11.91,2.1,Contaminated
+Guntur,7.67,781.06,4.07,7.13,2.74,Moderate Risk
+Guntur,6.92,388.76,1.23,37.31,10.34,Safe
+Guntur,7.92,138.94,5.64,5.82,0.09,Moderate Risk
+Guntur,7.22,279.64,10.46,11.82,0.37,Moderate Risk
+Guntur,7.66,300.87,5.52,9.62,5.17,Moderate Risk
+Guntur,6.65,523.04,3.7,2.42,0.21,Moderate Risk
+Guntur,6.78,326.22,1.24,5.42,3.55,Safe
+Guntur,5.8,373.38,0.09,9.29,2.52,Contaminated
+Guntur,7.79,339.15,4.12,19.5,3.42,Safe
+Guntur,7.52,287.88,0.69,5.82,0.34,Safe
+Guntur,7.09,418.24,7.0,19.97,3.12,Moderate Risk
+Guntur,7.75,610.3,4.87,5.65,7.7,Moderate Risk
+Guntur,7.76,391.11,2.0,6.21,7.69,Safe
+Guntur,7.37,593.33,0.59,6.31,17.22,Moderate Risk
+Guntur,7.78,488.88,0.1,6.31,5.2,Safe
+Guntur,7.33,573.4,0.66,3.82,1.66,Moderate Risk
+Guntur,6.68,406.73,0.52,16.75,0.71,Safe
+Guntur,6.98,168.48,2.18,14.42,2.96,Safe
+Guntur,7.61,590.03,0.36,1.7,2.87,Moderate Risk
+Kurnool,8.38,306.66,2.61,4.91,0.94,Safe
+Kurnool,7.52,182.13,1.65,7.23,0.94,Safe
+Kurnool,7.93,463.26,0.89,6.76,18.55,Safe
+Kurnool,7.98,144.97,0.28,9.31,0.47,Safe
+Kurnool,7.75,544.38,2.67,5.98,9.77,Moderate Risk
+Kurnool,7.2,490.14,8.04,8.75,3.87,Moderate Risk
+Kurnool,6.05,366.21,0.01,2.76,3.56,Contaminated
+Kurnool,6.47,80.6,11.83,4.31,3.01,Contaminated
+Kurnool,7.5,618.32,4.29,1.62,4.24,Moderate Risk
+Kurnool,6.54,287.96,0.03,1.4,1.85,Safe
+Kurnool,6.59,340.96,0.67,8.86,0.33,Safe
+Kurnool,6.95,160.66,0.07,10.24,2.67,Safe
+Kurnool,6.52,299.58,3.18,5.38,0.99,Safe
+Kurnool,7.7,671.55,5.87,1.25,7.7,Moderate Risk
+Kurnool,6.6,450.66,3.56,5.83,14.5,Safe
+Kurnool,7.5,258.1,1.44,31.42,2.0,Safe
+Kurnool,7.87,305.46,16.28,2.91,2.87,Moderate Risk
+Kurnool,5.7,427.66,0.05,2.49,1.66,Contaminated
+Kurnool,6.2,367.76,6.2,12.2,0.45,Contaminated
+Kurnool,8.25,592.69,9.39,0.03,1.42,Moderate Risk
+Kurnool,7.95,516.54,0.29,7.21,1.32,Moderate Risk
+Kurnool,7.58,326.52,0.44,6.32,13.95,Safe
+Kurnool,7.21,421.5,0.56,3.8,2.76,Safe
+Kurnool,6.31,255.04,10.75,1.66,6.61,Contaminated
+Kurnool,7.01,469.96,0.62,10.55,6.23,Safe
+Kurnool,6.31,574.53,0.87,31.22,12.84,Contaminated
+Kurnool,8.15,377.97,1.81,5.52,0.85,Safe
+Kurnool,8.17,41.11,0.07,5.87,7.6,Safe
+Kurnool,8.06,614.31,7.21,0.18,4.07,Moderate Risk
+Kurnool,7.37,618.95,1.17,1.46,10.93,Moderate Risk
+Kurnool,8.04,387.84,2.64,11.21,8.15,Safe
+Kurnool,6.35,649.16,2.16,16.25,2.34,Contaminated
+Kurnool,6.55,366.48,7.38,0.95,5.22,Moderate Risk
+Kurnool,5.83,163.1,3.41,0.69,4.5,Contaminated
+Kurnool,7.69,476.45,0.56,22.77,5.34,Safe
+Kurnool,7.17,555.43,2.34,25.14,11.51,Moderate Risk
+Kurnool,5.83,341.04,1.5,4.91,1.69,Contaminated
+Kurnool,7.73,336.58,0.22,11.32,0.95,Safe
+Kurnool,6.8,373.07,0.94,14.63,10.81,Safe
+Kurnool,7.04,174.09,1.91,20.68,7.19,Safe
+Kurnool,8.85,423.71,5.64,0.1,2.58,Contaminated
+Kurnool,7.39,461.04,2.35,7.54,2.14,Safe
+Kurnool,8.91,442.31,1.63,12.52,9.87,Contaminated
+Kurnool,7.07,221.65,1.57,11.63,1.44,Safe
+Kurnool,7.9,448.61,1.62,24.19,24.93,Safe
+Kurnool,7.0,344.73,9.01,31.78,0.51,Moderate Risk
+Kurnool,8.16,401.32,0.06,9.28,1.62,Safe
+Kurnool,6.86,505.97,3.48,11.22,1.25,Moderate Risk
+Kurnool,7.13,331.92,1.02,16.55,8.06,Safe
+Kurnool,9.0,263.86,2.78,17.55,2.77,Contaminated
+Nellore,6.44,263.96,2.3,5.96,2.9,Contaminated
+Nellore,7.41,327.3,0.72,2.19,2.66,Safe
+Nellore,7.55,184.94,1.39,5.96,3.85,Safe
+Nellore,6.82,339.4,6.37,5.69,2.66,Moderate Risk
+Nellore,7.2,318.46,2.42,8.18,6.14,Safe
+Nellore,6.76,291.89,4.99,29.41,0.73,Safe
+Nellore,6.0,398.16,0.19,3.94,0.78,Contaminated
+Nellore,7.43,673.9,0.47,0.09,8.26,Moderate Risk
+Nellore,7.51,223.5,1.23,8.81,1.9,Safe
+Nellore,7.14,381.9,0.62,5.59,5.37,Safe
+Nellore,9.15,465.57,9.88,8.9,3.19,Contaminated
+Nellore,7.79,419.06,5.29,3.9,1.35,Moderate Risk
+Nellore,7.23,141.13,4.09,7.0,0.35,Safe
+Nellore,7.88,493.19,1.03,10.91,2.78,Safe
+Nellore,8.75,438.51,6.45,6.85,1.88,Contaminated
+Nellore,6.57,506.66,1.48,20.08,6.44,Moderate Risk
+Nellore,6.12,331.72,1.32,3.34,0.97,Contaminated
+Nellore,6.51,526.81,1.82,4.88,20.11,Moderate Risk
+Nellore,6.62,371.65,0.28,8.93,4.57,Safe
+Nellore,5.92,113.79,0.17,7.27,3.51,Contaminated
+Nellore,6.2,467.47,0.87,1.91,15.83,Contaminated
+Nellore,6.87,481.22,1.19,2.36,3.39,Safe
+Nellore,7.96,408.25,0.54,16.3,7.85,Safe
+Nellore,6.99,253.02,0.56,2.94,1.53,Safe
+Nellore,5.51,600.9,8.85,1.35,18.19,Contaminated
+Nellore,7.79,291.41,1.24,1.54,9.76,Safe
+Nellore,8.06,207.1,2.51,6.38,3.42,Safe
+Nellore,6.87,434.6,3.31,22.62,0.3,Safe
+Nellore,7.55,292.42,1.72,5.17,0.74,Safe
+Nellore,6.34,402.94,1.94,14.42,1.49,Contaminated
+Nellore,7.4,398.55,3.48,18.41,2.68,Safe
+Nellore,7.0,352.33,1.54,18.69,2.13,Safe
+Nellore,8.24,544.05,2.65,4.42,4.3,Moderate Risk
+Nellore,6.69,363.71,14.8,1.36,0.38,Moderate Risk
+Nellore,6.91,505.38,3.15,3.99,2.48,Moderate Risk
+Nellore,6.54,212.26,1.59,12.74,3.58,Safe
+Nellore,9.33,414.57,7.58,0.5,4.26,Contaminated
+Nellore,6.86,488.34,6.27,0.19,6.59,Moderate Risk
+Nellore,7.36,480.62,1.73,0.46,12.64,Safe
+Nellore,6.82,395.46,3.51,6.57,0.66,Safe
+Nellore,8.73,574.61,2.11,16.99,9.87,Contaminated
+Nellore,6.63,656.38,2.5,10.47,2.16,Moderate Risk
+Nellore,6.98,299.24,1.4,2.41,4.4,Safe
+Nellore,6.8,390.82,1.16,16.63,5.85,Safe
+Nellore,7.96,561.04,1.12,1.05,1.59,Moderate Risk
+Nellore,6.98,399.47,0.45,3.89,4.32,Safe
+Nellore,7.77,364.94,4.55,14.08,4.67,Safe
+Nellore,8.37,601.06,2.97,8.07,21.49,Moderate Risk
+Nellore,7.9,509.81,6.18,2.43,0.44,Moderate Risk
+Nellore,9.0,-8.9,5.3,5.87,4.23,Contaminated
+Visakhapatnam,6.75,404.9,2.87,17.61,0.86,Safe
+Visakhapatnam,8.5,645.12,0.54,1.32,19.57,Moderate Risk
+Visakhapatnam,6.11,320.22,0.56,11.01,4.7,Contaminated
+Visakhapatnam,6.64,436.44,6.72,4.93,1.88,Moderate Risk
+Visakhapatnam,5.37,282.61,5.98,26.49,1.81,Contaminated
+Visakhapatnam,7.48,468.42,8.01,2.82,4.3,Moderate Risk
+Visakhapatnam,7.84,316.73,0.02,8.32,2.07,Safe
+Visakhapatnam,8.09,194.72,5.72,9.4,9.59,Moderate Risk
+Visakhapatnam,7.31,141.1,1.8,0.12,4.07,Safe
+Visakhapatnam,7.99,659.39,4.0,8.47,0.35,Moderate Risk
+Visakhapatnam,7.39,259.13,0.96,0.83,2.81,Safe
+Visakhapatnam,5.66,491.77,3.82,10.32,2.02,Contaminated
+Visakhapatnam,7.79,588.18,3.04,8.06,0.06,Moderate Risk
+Visakhapatnam,6.45,622.13,8.57,17.04,4.43,Contaminated
+Visakhapatnam,6.58,302.22,1.25,6.47,1.76,Safe
+Visakhapatnam,6.19,408.46,11.41,1.14,13.44,Contaminated
+Visakhapatnam,7.24,529.79,3.87,5.73,4.97,Moderate Risk
+Visakhapatnam,6.18,245.95,2.59,6.89,4.33,Contaminated
+Visakhapatnam,6.5,188.94,0.26,0.54,1.46,Contaminated
+Visakhapatnam,6.19,531.87,6.16,6.64,1.82,Contaminated
+Visakhapatnam,5.31,453.07,2.49,1.22,29.03,Contaminated
+Visakhapatnam,5.7,262.42,3.72,4.52,8.96,Contaminated
+Visakhapatnam,8.6,345.23,0.34,18.72,6.65,Contaminated
+Visakhapatnam,6.83,343.32,1.14,37.33,1.48,Safe
+Visakhapatnam,6.82,393.31,1.52,8.47,15.3,Safe
+Visakhapatnam,8.27,410.51,2.38,0.42,1.89,Safe
+Visakhapatnam,7.67,414.9,5.88,2.59,1.24,Moderate Risk
+Visakhapatnam,7.53,479.09,1.5,7.02,3.12,Safe
+Visakhapatnam,7.23,147.87,0.09,1.41,10.88,Safe
+Visakhapatnam,6.82,629.75,2.18,4.62,6.75,Moderate Risk
+Visakhapatnam,7.75,511.16,3.85,2.29,2.06,Moderate Risk
+Visakhapatnam,5.57,345.61,4.22,4.0,0.74,Contaminated
+Visakhapatnam,7.42,391.41,0.77,9.47,2.84,Safe
+Visakhapatnam,7.18,282.77,3.63,7.2,10.28,Safe
+Visakhapatnam,6.81,362.99,8.27,4.75,4.29,Moderate Risk
+Visakhapatnam,6.69,559.16,3.78,1.46,1.72,Moderate Risk
+Visakhapatnam,7.45,346.16,0.76,12.64,14.35,Safe
+Visakhapatnam,9.21,660.95,1.85,3.94,3.23,Contaminated
+Visakhapatnam,7.33,405.02,8.33,19.82,11.0,Moderate Risk
+Visakhapatnam,8.87,336.05,6.76,4.99,16.32,Contaminated
+Visakhapatnam,8.62,178.12,3.71,30.08,1.4,Contaminated
+Visakhapatnam,7.31,651.03,0.94,14.99,4.02,Moderate Risk
+Visakhapatnam,6.18,573.2,1.97,9.61,2.6,Contaminated
+Visakhapatnam,8.59,412.79,1.59,4.39,2.61,Contaminated
+Visakhapatnam,8.09,58.81,2.35,6.87,0.72,Safe
+Visakhapatnam,6.17,397.71,0.4,26.98,4.64,Contaminated
+Visakhapatnam,6.37,653.13,7.19,10.16,7.33,Contaminated
+Visakhapatnam,7.52,382.69,5.15,19.24,0.94,Moderate Risk
+Visakhapatnam,6.45,250.46,0.95,19.34,0.16,Contaminated
+Visakhapatnam,7.05,347.1,0.67,2.64,8.0,Safe
+Rajahmundry,7.11,402.25,1.68,5.24,0.6,Safe
+Rajahmundry,8.15,555.62,3.83,13.04,0.0,Moderate Risk
+Rajahmundry,7.78,672.97,8.74,5.85,4.57,Moderate Risk
+Rajahmundry,7.8,393.81,0.24,6.95,5.81,Safe
+Rajahmundry,7.51,603.89,7.19,28.47,0.33,Moderate Risk
+Rajahmundry,6.94,390.02,1.2,7.7,12.08,Safe
+Rajahmundry,7.35,274.86,2.28,3.1,11.49,Safe
+Rajahmundry,7.07,506.13,6.63,4.84,6.67,Moderate Risk
+Rajahmundry,6.36,389.92,7.89,6.05,6.63,Contaminated
+Rajahmundry,7.14,396.64,0.32,6.86,5.86,Safe
+Rajahmundry,8.2,241.53,3.6,12.17,3.39,Safe
+Rajahmundry,7.18,529.43,1.79,2.22,1.84,Moderate Risk
+Rajahmundry,7.3,337.16,0.86,3.63,7.37,Safe
+Rajahmundry,6.28,284.66,0.56,14.91,0.69,Contaminated
+Rajahmundry,7.56,-56.7,3.49,10.03,8.32,Safe
+Rajahmundry,7.17,385.95,0.99,1.58,1.71,Safe
+Rajahmundry,7.38,108.02,3.27,4.8,6.36,Safe
+Rajahmundry,6.2,253.33,2.34,0.24,0.42,Contaminated
+Rajahmundry,7.71,382.35,3.84,0.92,9.36,Safe
+Rajahmundry,7.76,620.56,5.15,5.18,1.25,Moderate Risk
+Rajahmundry,9.55,508.67,2.32,8.33,14.85,Contaminated
+Rajahmundry,6.98,330.41,2.05,18.74,3.52,Safe
+Rajahmundry,6.72,461.79,0.87,13.16,0.9,Safe
+Rajahmundry,6.16,277.25,1.29,12.32,2.29,Contaminated
+Rajahmundry,6.47,418.97,4.9,4.62,5.23,Contaminated
+Rajahmundry,6.5,502.05,6.48,9.58,2.8,Contaminated
+Rajahmundry,6.59,499.55,1.24,16.59,5.95,Safe
+Rajahmundry,6.93,628.41,3.78,4.89,1.19,Moderate Risk
+Rajahmundry,7.37,408.73,1.12,6.18,5.6,Safe
+Rajahmundry,8.16,421.85,4.3,0.6,32.26,Safe
+Rajahmundry,7.66,459.56,3.16,19.4,0.6,Safe
+Rajahmundry,7.88,348.68,0.68,0.81,7.76,Safe
+Rajahmundry,6.95,447.15,5.78,11.61,3.67,Moderate Risk
+Rajahmundry,6.96,580.99,0.65,3.35,3.52,Moderate Risk
+Rajahmundry,8.31,421.36,4.7,8.71,7.59,Safe
+Rajahmundry,7.85,241.21,1.58,20.9,1.77,Safe
+Rajahmundry,5.7,577.0,2.3,20.92,12.18,Contaminated
+Rajahmundry,6.98,144.17,2.39,29.78,32.92,Safe
+Rajahmundry,7.83,263.26,1.42,0.08,0.05,Safe
+Rajahmundry,6.48,-54.68,0.07,11.61,1.74,Contaminated
+Rajahmundry,5.76,480.96,0.55,5.23,1.32,Contaminated
+Rajahmundry,6.08,424.36,2.13,1.71,5.56,Contaminated
+Rajahmundry,6.84,444.09,1.89,0.74,4.56,Safe
+Rajahmundry,7.36,142.71,2.19,25.82,3.98,Safe
+Rajahmundry,5.78,625.41,8.93,15.01,1.68,Contaminated
+Rajahmundry,7.02,575.25,5.29,17.31,1.05,Moderate Risk
+Rajahmundry,6.35,553.24,1.06,3.51,6.47,Contaminated
+Rajahmundry,6.54,480.63,0.33,2.71,2.39,Safe
+Rajahmundry,6.72,395.19,10.58,12.59,1.95,Moderate Risk
+Rajahmundry,6.77,114.93,2.95,1.58,1.05,Safe
+Tirupati,6.86,493.2,1.44,20.5,5.44,Safe
+Tirupati,8.23,233.41,0.06,13.3,3.34,Safe
+Tirupati,5.4,429.31,1.88,11.71,10.77,Contaminated
+Tirupati,6.91,493.38,0.34,1.19,1.72,Safe
+Tirupati,8.18,469.16,6.89,9.78,0.03,Moderate Risk
+Tirupati,7.22,58.37,0.13,4.28,0.99,Safe
+Tirupati,6.79,718.68,2.05,5.58,15.62,Moderate Risk
+Tirupati,7.27,175.99,4.0,8.14,13.23,Safe
+Tirupati,6.67,63.71,0.28,9.39,1.7,Safe
+Tirupati,7.33,217.11,2.28,0.79,5.99,Safe
+Tirupati,6.26,470.28,1.9,12.74,3.77,Contaminated
+Tirupati,5.9,256.81,2.83,27.99,5.57,Contaminated
+Tirupati,7.14,281.38,6.64,0.99,22.49,Moderate Risk
+Tirupati,7.05,488.35,5.59,5.42,2.91,Moderate Risk
+Tirupati,8.21,492.5,0.1,8.99,1.03,Safe
+Tirupati,6.17,204.61,1.9,4.07,0.57,Contaminated
+Tirupati,7.69,394.01,0.37,29.24,6.61,Safe
+Tirupati,8.31,597.38,5.26,1.13,3.51,Moderate Risk
+Tirupati,7.79,651.96,5.37,0.75,5.87,Moderate Risk
+Tirupati,5.39,495.59,1.25,9.7,11.08,Contaminated
+Tirupati,8.25,397.68,1.54,1.08,0.32,Safe
+Tirupati,7.09,321.23,1.23,12.66,6.79,Safe
+Tirupati,7.49,141.84,0.47,1.44,14.39,Safe
+Tirupati,6.79,473.29,1.57,4.39,7.83,Safe
+Tirupati,6.33,404.47,4.03,5.06,1.53,Contaminated
+Tirupati,7.17,46.35,1.26,2.77,2.54,Safe
+Tirupati,8.15,500.09,5.04,6.8,1.15,Moderate Risk
+Tirupati,7.91,558.62,0.85,23.37,0.55,Moderate Risk
+Tirupati,7.52,425.46,3.84,2.11,2.92,Safe
+Tirupati,7.06,298.43,4.06,4.88,2.0,Safe
+Tirupati,8.0,438.21,0.15,4.87,0.86,Safe
+Tirupati,6.69,447.61,3.28,3.37,1.11,Safe
+Tirupati,6.9,392.68,1.98,6.95,1.94,Safe
+Tirupati,6.94,256.83,3.35,15.25,3.78,Safe
+Tirupati,6.15,459.1,1.02,1.77,1.43,Contaminated
+Tirupati,7.29,169.18,2.48,28.99,1.09,Safe
+Tirupati,8.08,473.8,2.46,2.94,1.52,Safe
+Tirupati,7.77,254.64,4.58,6.08,5.99,Safe
+Tirupati,6.32,345.76,1.52,8.67,14.79,Contaminated
+Tirupati,7.21,284.69,1.2,7.1,0.12,Safe
+Tirupati,7.96,317.11,2.42,5.99,1.68,Safe
+Tirupati,6.5,173.34,5.42,34.18,2.89,Moderate Risk
+Tirupati,8.07,349.98,1.67,8.03,1.31,Safe
+Tirupati,7.38,650.79,4.97,15.17,1.21,Moderate Risk
+Tirupati,7.91,496.28,1.27,1.89,0.01,Safe
+Tirupati,5.56,297.65,2.43,2.08,9.82,Contaminated
+Tirupati,6.53,288.63,1.97,6.91,1.21,Safe
+Tirupati,6.58,320.1,3.8,14.7,3.1,Safe
+Tirupati,8.0,535.34,0.45,33.87,8.6,Moderate Risk
+Tirupati,6.75,320.79,0.4,1.49,6.89,Safe
+Kakinada,8.39,375.98,4.11,9.28,5.8,Safe
+Kakinada,6.29,533.11,3.49,15.72,1.83,Contaminated
+Kakinada,6.59,355.05,2.03,14.63,1.25,Safe
+Kakinada,6.48,278.27,14.36,2.2,4.28,Contaminated
+Kakinada,7.0,449.98,3.02,14.31,21.35,Safe
+Kakinada,7.64,301.0,1.24,1.93,2.74,Safe
+Kakinada,7.06,615.73,2.31,53.31,2.55,Contaminated
+Kakinada,5.96,598.63,1.5,11.9,13.89,Contaminated
+Kakinada,8.43,436.52,0.28,2.37,3.49,Safe
+Kakinada,6.92,401.85,0.92,7.22,4.26,Safe
+Kakinada,7.37,492.27,1.61,26.64,7.68,Safe
+Kakinada,6.92,357.75,3.38,8.21,7.8,Safe
+Kakinada,7.78,608.79,12.89,7.63,0.6,Moderate Risk
+Kakinada,6.77,505.62,4.51,31.49,5.97,Moderate Risk
+Kakinada,6.44,747.65,1.36,4.35,5.06,Contaminated
+Kakinada,7.84,570.1,0.66,6.81,7.84,Moderate Risk
+Kakinada,9.28,141.39,4.42,10.83,2.63,Contaminated
+Kakinada,7.86,263.27,5.0,19.59,23.89,Safe
+Kakinada,8.03,247.17,0.37,5.22,9.42,Safe
+Kakinada,8.17,136.7,2.1,10.38,18.04,Safe
+Kakinada,7.28,304.33,5.96,6.57,0.41,Moderate Risk
+Kakinada,5.67,503.26,0.51,18.91,3.69,Contaminated
+Kakinada,6.13,352.03,7.25,1.92,1.68,Contaminated
+Kakinada,5.82,418.38,0.71,9.14,0.47,Contaminated
+Kakinada,7.07,316.71,3.83,8.09,2.75,Safe
+Kakinada,5.62,544.63,8.25,0.56,5.59,Contaminated
+Kakinada,7.29,422.71,0.61,3.51,6.31,Safe
+Kakinada,7.98,539.63,0.32,12.65,5.69,Moderate Risk
+Kakinada,7.15,366.86,0.48,8.17,12.47,Safe
+Kakinada,8.07,348.75,0.0,1.85,0.15,Safe
+Kakinada,7.71,359.46,0.31,9.32,3.0,Safe
+Kakinada,5.86,325.02,6.12,9.29,4.76,Contaminated
+Kakinada,6.49,410.46,1.77,76.11,9.02,Contaminated
+Kakinada,7.02,352.0,0.01,3.62,0.57,Safe
+Kakinada,8.8,353.86,6.23,13.83,13.95,Contaminated
+Kakinada,6.19,545.2,0.88,4.02,1.57,Contaminated
+Kakinada,4.92,481.69,2.15,11.17,2.45,Contaminated
+Kakinada,6.65,323.26,1.29,13.54,7.07,Safe
+Kakinada,6.28,508.76,2.66,8.46,3.31,Contaminated
+Kakinada,6.81,847.95,2.5,12.57,0.58,Contaminated
+Kakinada,6.73,459.86,0.21,37.33,15.73,Safe
+Kakinada,7.13,296.69,0.62,6.64,8.86,Safe
+Kakinada,7.31,471.29,1.31,9.25,1.87,Safe
+Kakinada,5.68,494.45,1.04,0.34,8.46,Contaminated
+Kakinada,5.65,317.63,1.91,17.08,0.67,Contaminated
+Kakinada,7.09,486.27,0.73,4.68,2.02,Safe
+Kakinada,7.51,223.92,1.94,20.08,0.16,Safe
+Kakinada,8.2,503.01,4.27,21.72,6.53,Moderate Risk
+Kakinada,7.03,481.33,2.1,0.14,0.03,Safe
+Kakinada,6.9,363.95,0.9,1.95,0.14,Safe
+Ongole,6.65,470.15,7.3,22.33,5.31,Moderate Risk
+Ongole,7.44,511.37,1.27,22.41,1.72,Moderate Risk
+Ongole,6.48,421.3,7.65,1.52,1.27,Contaminated
+Ongole,8.43,450.56,2.9,2.64,0.0,Safe
+Ongole,7.06,604.03,7.02,5.27,3.72,Moderate Risk
+Ongole,5.04,223.2,4.48,7.48,1.9,Contaminated
+Ongole,6.04,466.73,0.48,10.61,5.72,Contaminated
+Ongole,7.22,648.17,6.73,27.54,8.23,Moderate Risk
+Ongole,6.07,546.68,12.21,3.2,1.13,Contaminated
+Ongole,6.67,386.99,11.52,8.88,4.07,Moderate Risk
+Ongole,7.17,723.87,0.1,9.48,6.3,Moderate Risk
+Ongole,8.39,327.6,0.77,2.5,0.88,Safe
+Ongole,8.02,342.99,5.28,4.83,4.45,Moderate Risk
+Ongole,6.44,520.84,0.55,35.79,4.81,Contaminated
+Ongole,6.41,508.46,0.91,7.17,1.93,Contaminated
+Ongole,6.78,290.06,0.11,12.19,3.39,Safe
+Ongole,7.39,273.88,0.3,14.04,0.1,Safe
+Ongole,7.57,355.81,3.8,0.76,8.61,Safe
+Ongole,8.17,396.36,2.75,11.45,25.18,Safe
+Ongole,7.69,202.24,1.85,0.4,0.07,Safe
+Ongole,7.46,274.73,2.51,8.06,0.16,Safe
+Ongole,7.84,391.33,1.52,9.81,7.57,Safe
+Ongole,7.28,624.7,5.85,4.97,10.98,Moderate Risk
+Ongole,6.56,257.92,0.16,15.88,2.7,Safe
+Ongole,6.61,288.97,6.95,17.95,4.03,Moderate Risk
+Ongole,6.79,751.04,1.49,24.71,0.67,Moderate Risk
+Ongole,5.75,257.4,2.07,6.12,3.66,Contaminated
+Ongole,7.23,228.4,0.83,2.04,0.34,Safe
+Ongole,6.87,625.29,2.96,13.0,5.69,Moderate Risk
+Ongole,5.33,307.7,1.41,10.22,3.41,Contaminated
+Ongole,7.04,372.51,2.99,3.58,0.09,Safe
+Ongole,6.99,455.59,7.95,12.64,7.19,Moderate Risk
+Ongole,6.7,293.99,2.21,1.89,1.82,Safe
+Ongole,6.47,328.53,0.69,15.54,0.91,Contaminated
+Ongole,7.26,356.78,11.19,4.02,0.63,Moderate Risk
+Ongole,7.89,422.47,4.6,9.74,1.89,Safe
+Ongole,6.49,413.55,3.41,12.91,16.77,Contaminated
+Ongole,8.65,459.89,4.69,2.15,1.52,Contaminated
+Ongole,5.54,423.1,5.91,6.42,8.04,Contaminated
+Ongole,8.35,463.73,1.21,17.8,1.6,Safe
+Ongole,6.03,435.27,1.94,3.83,1.55,Contaminated
+Ongole,7.73,377.9,0.04,8.86,3.48,Safe
+Ongole,8.12,574.39,3.32,28.53,8.66,Moderate Risk
+Ongole,7.17,312.36,1.52,3.71,3.0,Safe
+Ongole,6.27,102.87,11.63,0.93,12.77,Contaminated
+Ongole,9.06,344.34,5.32,4.47,2.81,Contaminated
+Ongole,5.79,209.65,7.79,17.66,0.58,Contaminated
+Ongole,7.06,259.43,0.31,9.65,0.78,Safe
+Ongole,7.01,401.58,1.14,11.31,3.31,Safe
+Ongole,6.86,380.24,5.61,24.22,8.59,Moderate Risk
+Eluru,7.9,258.03,7.16,2.69,11.94,Moderate Risk
+Eluru,7.28,367.91,2.28,6.5,1.26,Safe
+Eluru,6.47,490.62,2.41,2.92,15.57,Contaminated
+Eluru,6.8,177.7,0.79,6.76,10.3,Safe
+Eluru,7.7,649.7,0.28,11.84,0.91,Moderate Risk
+Eluru,6.65,518.35,1.62,4.32,9.79,Moderate Risk
+Eluru,7.35,244.61,0.46,12.2,11.77,Safe
+Eluru,6.79,-19.26,7.87,7.36,3.34,Moderate Risk
+Eluru,8.6,508.4,0.34,17.21,2.86,Contaminated
+Eluru,6.55,362.67,3.01,21.21,10.94,Safe
+Eluru,6.82,568.18,2.76,9.32,2.27,Moderate Risk
+Eluru,7.21,538.12,1.88,59.97,3.4,Contaminated
+Eluru,7.24,201.06,5.05,15.0,7.77,Moderate Risk
+Eluru,6.39,528.57,5.94,22.39,1.08,Contaminated
+Eluru,7.29,549.73,3.12,7.88,0.26,Moderate Risk
+Eluru,7.23,652.91,3.13,6.98,3.38,Moderate Risk
+Eluru,6.77,279.78,0.52,2.18,18.06,Safe
+Eluru,6.82,293.3,2.68,9.42,0.84,Safe
+Eluru,7.7,496.23,0.81,3.41,13.9,Safe
+Eluru,7.63,533.66,0.26,5.42,4.1,Moderate Risk
+Eluru,7.02,200.1,2.76,3.97,7.59,Safe
+Eluru,6.82,537.24,5.47,1.09,9.09,Moderate Risk
+Eluru,6.85,727.86,7.15,4.51,1.69,Moderate Risk
+Eluru,4.71,407.8,1.27,11.83,7.13,Contaminated
+Eluru,7.93,251.94,1.5,11.3,3.23,Safe
+Eluru,5.89,359.63,1.39,0.2,3.71,Contaminated
+Eluru,9.9,501.48,10.95,24.24,0.88,Contaminated
+Eluru,6.32,116.48,1.34,16.02,3.71,Contaminated
+Eluru,8.1,434.36,4.92,1.42,6.26,Safe
+Eluru,5.8,317.4,0.15,6.68,2.2,Contaminated
+Eluru,7.87,239.84,4.4,2.81,0.25,Safe
+Eluru,7.34,488.06,1.17,2.83,0.05,Safe
+Eluru,6.77,341.71,2.84,1.82,3.76,Safe
+Eluru,5.88,510.41,0.11,0.38,0.13,Contaminated
+Eluru,6.51,570.34,4.77,5.65,3.02,Moderate Risk
+Eluru,8.67,416.71,0.96,1.3,4.06,Contaminated
+Eluru,6.69,114.06,3.12,6.81,4.84,Safe
+Eluru,8.53,446.08,3.67,7.64,5.68,Contaminated
+Eluru,7.05,554.9,1.6,14.45,4.37,Moderate Risk
+Eluru,7.3,311.3,1.68,4.01,0.47,Safe
+Eluru,6.48,804.75,0.33,9.48,6.7,Contaminated
+Eluru,7.43,428.27,1.58,30.59,10.03,Safe
+Eluru,6.54,326.06,1.71,5.14,4.29,Safe
+Eluru,8.41,475.97,2.14,1.11,9.77,Safe
+Eluru,7.07,363.49,0.14,12.21,9.5,Safe
+Eluru,7.8,382.78,2.68,9.94,9.34,Safe
+Eluru,6.42,197.07,7.09,23.12,18.75,Contaminated
+Eluru,6.93,582.18,14.07,6.39,4.04,Moderate Risk
+Eluru,5.61,449.86,0.23,22.6,8.11,Contaminated
+Eluru,7.5,326.47,2.95,5.26,1.47,Safe

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Inter:wght@300;400;500;600&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_242e0361bf1a096ea871b6abddfe71b2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+            <style>
+                .map-glass-legend {
+                    position: fixed;
+                    bottom: 24px;
+                    left: 24px;
+                    z-index: 1000;
+                    padding: 12px 14px;
+                    border-radius: 18px;
+                    background: rgba(255,255,255,0.14);
+                    border: 1px solid rgba(56,189,248,0.28);
+                    box-shadow: 0 12px 40px rgba(56,189,248,0.22);
+                    backdrop-filter: blur(12px);
+                    -webkit-backdrop-filter: blur(12px);
+                    font-family: 'Inter', sans-serif;
+                    font-size: 13px;
+                    color: #0b3a66;
+                    animation: mapLegendFloat 6s ease-in-out infinite;
+                }
+
+                @keyframes mapLegendFloat {
+                    0%, 100% { transform: translateY(0); }
+                    50% { transform: translateY(-4px); }
+                }
+
+                /* Override Folium popup blocks that use inline Arial font */
+                #map_242e0361bf1a096ea871b6abddfe71b2 [id^="html_"] * {
+                    font-family: 'Inter', sans-serif !important;
+                }
+            </style>
+
+        
+</head>
+<body>
+    
+    
+    <div class="map-glass-legend">
+      <b>🗺 JalSaathi Map Legend</b><br>
+      <span style="color:red">● </span> High Flood Risk (&gt;70%)<br>
+      <span style="color:orange">● </span> Medium Risk (40–70%)<br>
+      <span style="color:green">● </span> Low Risk (&lt;40%)<br>
+      <hr style="margin:5px 0">
+      <span style="color:red">📍</span> Dam &gt;85% Full<br>
+      <span style="color:orange">📍</span> Dam 60–85% Full<br>
+      <span style="color:blue">📍</span> Dam &lt;60% Full
+    </div>
+    
+    
+            <div class="folium-map" id="map_242e0361bf1a096ea871b6abddfe71b2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_242e0361bf1a096ea871b6abddfe71b2 = L.map(
+                "map_242e0361bf1a096ea871b6abddfe71b2",
+                {
+                    center: [15.9129, 79.74],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dcdf5651dcf03fc213548328e48dd2f7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_dcdf5651dcf03fc213548328e48dd2f7.addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+            var circle_marker_c9f32ed636b3abbaaa2c289d39ff5e9d = L.circleMarker(
+                [16.5062, 80.648],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.001343937474303, "stroke": true, "weight": 3}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+        var popup_88d27662395b910d0449bb55d7282f89 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_16ecf9167939a0694202fa2b9fc1206d = $(`<div id="html_16ecf9167939a0694202fa2b9fc1206d" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial; width:220px">           <h4 style="color:#1a73e8; margin:0">💧 Vijayawada</h4>           <hr style="margin:5px 0">           <b>🌧 Rainfall (today):</b> 8.5 mm<br>           <b>🏞 Reservoir Level:</b> 63.0%<br>           <b>🌊 Flood Risk:</b>             <span style="color:green">               0%             </span><br>           <b>🪨 Groundwater Depth:</b> 20.6 m<br>           <b>🧪 Water Quality:</b>             <span style="color:green">Safe</span>         </div>         </div>`)[0];
+                popup_88d27662395b910d0449bb55d7282f89.setContent(html_16ecf9167939a0694202fa2b9fc1206d);
+            
+        
+
+        circle_marker_c9f32ed636b3abbaaa2c289d39ff5e9d.bindPopup(popup_88d27662395b910d0449bb55d7282f89)
+        ;
+
+        
+    
+    
+            circle_marker_c9f32ed636b3abbaaa2c289d39ff5e9d.bindTooltip(
+                `<div>
+                     Vijayawada — Flood Risk: 0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d7b1d78d0497ef78c1451f593adf941d = L.marker(
+                [16.586199999999998, 80.728],
+                {
+}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+            var icon_fb545d6f8b609b77e299972f2dd5060d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d7b1d78d0497ef78c1451f593adf941d.bindTooltip(
+                `<div>
+                     🏞 Vijayawada Dam: 63.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7b1d78d0497ef78c1451f593adf941d.setIcon(icon_fb545d6f8b609b77e299972f2dd5060d);
+            
+    
+            var circle_marker_4408893b868f7a2e01f1d50de8c5f235 = L.circleMarker(
+                [16.3067, 80.4365],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.003897533752024, "stroke": true, "weight": 3}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+        var popup_9a15fac05c7211071ed7c24009467dae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0021445f0bb20afe370833a3e5d25bf5 = $(`<div id="html_0021445f0bb20afe370833a3e5d25bf5" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial; width:220px">           <h4 style="color:#1a73e8; margin:0">💧 Guntur</h4>           <hr style="margin:5px 0">           <b>🌧 Rainfall (today):</b> 0.5 mm<br>           <b>🏞 Reservoir Level:</b> 61.0%<br>           <b>🌊 Flood Risk:</b>             <span style="color:green">               0%             </span><br>           <b>🪨 Groundwater Depth:</b> 23.5 m<br>           <b>🧪 Water Quality:</b>             <span style="color:green">Safe</span>         </div>         </div>`)[0];
+                popup_9a15fac05c7211071ed7c24009467dae.setContent(html_0021445f0bb20afe370833a3e5d25bf5);
+            
+        
+
+        circle_marker_4408893b868f7a2e01f1d50de8c5f235.bindPopup(popup_9a15fac05c7211071ed7c24009467dae)
+        ;
+
+        
+    
+    
+            circle_marker_4408893b868f7a2e01f1d50de8c5f235.bindTooltip(
+                `<div>
+                     Guntur — Flood Risk: 0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1991a25b1c5ba3351a599bc96170f301 = L.marker(
+                [16.386699999999998, 80.5165],
+                {
+}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+            var icon_8ac306be248cb55e8732e32a2076b3db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1991a25b1c5ba3351a599bc96170f301.bindTooltip(
+                `<div>
+                     🏞 Guntur Dam: 61.0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1991a25b1c5ba3351a599bc96170f301.setIcon(icon_8ac306be248cb55e8732e32a2076b3db);
+            
+    
+            var circle_marker_bd519d202c1cefae52df8fa665201c04 = L.circleMarker(
+                [15.8281, 78.0373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.003897533752024, "stroke": true, "weight": 3}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+        var popup_8f0092e15e1bd53d2f65f240c4838d2f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2cd85ad01b2fd2b0f92c80b49342a49c = $(`<div id="html_2cd85ad01b2fd2b0f92c80b49342a49c" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial; width:220px">           <h4 style="color:#1a73e8; margin:0">💧 Kurnool</h4>           <hr style="margin:5px 0">           <b>🌧 Rainfall (today):</b> 0.8 mm<br>           <b>🏞 Reservoir Level:</b> 59.5%<br>           <b>🌊 Flood Risk:</b>             <span style="color:green">               0%             </span><br>           <b>🪨 Groundwater Depth:</b> 16.1 m<br>           <b>🧪 Water Quality:</b>             <span style="color:green">Safe</span>         </div>         </div>`)[0];
+                popup_8f0092e15e1bd53d2f65f240c4838d2f.setContent(html_2cd85ad01b2fd2b0f92c80b49342a49c);
+            
+        
+
+        circle_marker_bd519d202c1cefae52df8fa665201c04.bindPopup(popup_8f0092e15e1bd53d2f65f240c4838d2f)
+        ;
+
+        
+    
+    
+            circle_marker_bd519d202c1cefae52df8fa665201c04.bindTooltip(
+                `<div>
+                     Kurnool — Flood Risk: 0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bcf6025ccba74539fbf98573976b07e8 = L.marker(
+                [15.9081, 78.1173],
+                {
+}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+            var icon_a4e206029d48c81b00433f5ffbcbec62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_bcf6025ccba74539fbf98573976b07e8.bindTooltip(
+                `<div>
+                     🏞 Kurnool Dam: 59.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bcf6025ccba74539fbf98573976b07e8.setIcon(icon_a4e206029d48c81b00433f5ffbcbec62);
+            
+    
+            var circle_marker_51083d769a4cc2a620336712fa35ec1b = L.circleMarker(
+                [14.4426, 79.9865],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.002639153099153, "stroke": true, "weight": 3}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+        var popup_8e8380be50da313f84f8099d3e2433f7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5e0310c59ff5f341a85f49532d4d0023 = $(`<div id="html_5e0310c59ff5f341a85f49532d4d0023" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial; width:220px">           <h4 style="color:#1a73e8; margin:0">💧 Nellore</h4>           <hr style="margin:5px 0">           <b>🌧 Rainfall (today):</b> 3.2 mm<br>           <b>🏞 Reservoir Level:</b> 58.7%<br>           <b>🌊 Flood Risk:</b>             <span style="color:green">               0%             </span><br>           <b>🪨 Groundwater Depth:</b> 20.7 m<br>           <b>🧪 Water Quality:</b>             <span style="color:green">Safe</span>         </div>         </div>`)[0];
+                popup_8e8380be50da313f84f8099d3e2433f7.setContent(html_5e0310c59ff5f341a85f49532d4d0023);
+            
+        
+
+        circle_marker_51083d769a4cc2a620336712fa35ec1b.bindPopup(popup_8e8380be50da313f84f8099d3e2433f7)
+        ;
+
+        
+    
+    
+            circle_marker_51083d769a4cc2a620336712fa35ec1b.bindTooltip(
+                `<div>
+                     Nellore — Flood Risk: 0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8aa25ffe6e051e0f77b81bae432ea6de = L.marker(
+                [14.5226, 80.0665],
+                {
+}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+            var icon_2d01d6d3dda362bbff30c9aa79ed4f7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8aa25ffe6e051e0f77b81bae432ea6de.bindTooltip(
+                `<div>
+                     🏞 Nellore Dam: 58.7%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8aa25ffe6e051e0f77b81bae432ea6de.setIcon(icon_2d01d6d3dda362bbff30c9aa79ed4f7e);
+            
+    
+            var circle_marker_3c9e3d84eeb9956a29439c4ae27428e9 = L.circleMarker(
+                [17.6868, 83.2185],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.002639153099153, "stroke": true, "weight": 3}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+        var popup_f2d320c27d86f12ebd5a1c19ebbf33ab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4e76dd336bd66e951c0425d344193ad1 = $(`<div id="html_4e76dd336bd66e951c0425d344193ad1" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial; width:220px">           <h4 style="color:#1a73e8; margin:0">💧 Visakhapatnam</h4>           <hr style="margin:5px 0">           <b>🌧 Rainfall (today):</b> 3.1 mm<br>           <b>🏞 Reservoir Level:</b> 59.9%<br>           <b>🌊 Flood Risk:</b>             <span style="color:green">               0%             </span><br>           <b>🪨 Groundwater Depth:</b> 23.8 m<br>           <b>🧪 Water Quality:</b>             <span style="color:red">Contaminated</span>         </div>         </div>`)[0];
+                popup_f2d320c27d86f12ebd5a1c19ebbf33ab.setContent(html_4e76dd336bd66e951c0425d344193ad1);
+            
+        
+
+        circle_marker_3c9e3d84eeb9956a29439c4ae27428e9.bindPopup(popup_f2d320c27d86f12ebd5a1c19ebbf33ab)
+        ;
+
+        
+    
+    
+            circle_marker_3c9e3d84eeb9956a29439c4ae27428e9.bindTooltip(
+                `<div>
+                     Visakhapatnam — Flood Risk: 0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e69c61e6f26a685f265e0511e9c357b = L.marker(
+                [17.7668, 83.2985],
+                {
+}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+            var icon_d53d38dd89ddd3ab592fea9524cf4b37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8e69c61e6f26a685f265e0511e9c357b.bindTooltip(
+                `<div>
+                     🏞 Visakhapatnam Dam: 59.9%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e69c61e6f26a685f265e0511e9c357b.setIcon(icon_d53d38dd89ddd3ab592fea9524cf4b37);
+            
+    
+            var circle_marker_c1fd1c8dc277eb8c09725a1144fc1662 = L.circleMarker(
+                [17.0005, 81.804],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.002639153099153, "stroke": true, "weight": 3}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+        var popup_ad6668bbad50f5a58c872bfe89e07fee = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0b8f3f88b3528bb52872d4f4f055ca81 = $(`<div id="html_0b8f3f88b3528bb52872d4f4f055ca81" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial; width:220px">           <h4 style="color:#1a73e8; margin:0">💧 Rajahmundry</h4>           <hr style="margin:5px 0">           <b>🌧 Rainfall (today):</b> 3.3 mm<br>           <b>🏞 Reservoir Level:</b> 58.5%<br>           <b>🌊 Flood Risk:</b>             <span style="color:green">               0%             </span><br>           <b>🪨 Groundwater Depth:</b> 26.9 m<br>           <b>🧪 Water Quality:</b>             <span style="color:green">Safe</span>         </div>         </div>`)[0];
+                popup_ad6668bbad50f5a58c872bfe89e07fee.setContent(html_0b8f3f88b3528bb52872d4f4f055ca81);
+            
+        
+
+        circle_marker_c1fd1c8dc277eb8c09725a1144fc1662.bindPopup(popup_ad6668bbad50f5a58c872bfe89e07fee)
+        ;
+
+        
+    
+    
+            circle_marker_c1fd1c8dc277eb8c09725a1144fc1662.bindTooltip(
+                `<div>
+                     Rajahmundry — Flood Risk: 0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6fcb58f840e20635a1146c128cd0b05b = L.marker(
+                [17.080499999999997, 81.884],
+                {
+}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+            var icon_854ab3eb104b58c6cca555fef1d8427f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6fcb58f840e20635a1146c128cd0b05b.bindTooltip(
+                `<div>
+                     🏞 Rajahmundry Dam: 58.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6fcb58f840e20635a1146c128cd0b05b.setIcon(icon_854ab3eb104b58c6cca555fef1d8427f);
+            
+    
+            var circle_marker_b451464a5976f346a8c54c8baefad102 = L.circleMarker(
+                [13.6288, 79.4192],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.003897533752024, "stroke": true, "weight": 3}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+        var popup_c07c23c83163c7e700f7a301df9b6710 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_484d62636f9d98effccfd97b37718a6e = $(`<div id="html_484d62636f9d98effccfd97b37718a6e" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial; width:220px">           <h4 style="color:#1a73e8; margin:0">💧 Tirupati</h4>           <hr style="margin:5px 0">           <b>🌧 Rainfall (today):</b> 0.2 mm<br>           <b>🏞 Reservoir Level:</b> 59.8%<br>           <b>🌊 Flood Risk:</b>             <span style="color:green">               0%             </span><br>           <b>🪨 Groundwater Depth:</b> 33.3 m<br>           <b>🧪 Water Quality:</b>             <span style="color:green">Safe</span>         </div>         </div>`)[0];
+                popup_c07c23c83163c7e700f7a301df9b6710.setContent(html_484d62636f9d98effccfd97b37718a6e);
+            
+        
+
+        circle_marker_b451464a5976f346a8c54c8baefad102.bindPopup(popup_c07c23c83163c7e700f7a301df9b6710)
+        ;
+
+        
+    
+    
+            circle_marker_b451464a5976f346a8c54c8baefad102.bindTooltip(
+                `<div>
+                     Tirupati — Flood Risk: 0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2fd6307b24e823e72db60fe34eb25037 = L.marker(
+                [13.7088, 79.4992],
+                {
+}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+            var icon_4718541ebb72bb9258a6b861bd9421e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2fd6307b24e823e72db60fe34eb25037.bindTooltip(
+                `<div>
+                     🏞 Tirupati Dam: 59.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2fd6307b24e823e72db60fe34eb25037.setIcon(icon_4718541ebb72bb9258a6b861bd9421e6);
+            
+    
+            var circle_marker_1c28c03e86748dfcaffa934cf11986b1 = L.circleMarker(
+                [16.9891, 82.2475],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.003897533752024, "stroke": true, "weight": 3}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+        var popup_97bd57f6f07db34e60f369987becb21c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_292a94fe6077957a666f21ae137bc7ed = $(`<div id="html_292a94fe6077957a666f21ae137bc7ed" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial; width:220px">           <h4 style="color:#1a73e8; margin:0">💧 Kakinada</h4>           <hr style="margin:5px 0">           <b>🌧 Rainfall (today):</b> 1.1 mm<br>           <b>🏞 Reservoir Level:</b> 59.6%<br>           <b>🌊 Flood Risk:</b>             <span style="color:green">               0%             </span><br>           <b>🪨 Groundwater Depth:</b> 26.6 m<br>           <b>🧪 Water Quality:</b>             <span style="color:green">Safe</span>         </div>         </div>`)[0];
+                popup_97bd57f6f07db34e60f369987becb21c.setContent(html_292a94fe6077957a666f21ae137bc7ed);
+            
+        
+
+        circle_marker_1c28c03e86748dfcaffa934cf11986b1.bindPopup(popup_97bd57f6f07db34e60f369987becb21c)
+        ;
+
+        
+    
+    
+            circle_marker_1c28c03e86748dfcaffa934cf11986b1.bindTooltip(
+                `<div>
+                     Kakinada — Flood Risk: 0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_72dc7eea6fcab986573f70e17f6d3484 = L.marker(
+                [17.0691, 82.3275],
+                {
+}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+            var icon_909d3bade2d54c4a3a8f8b77b53e6d26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_72dc7eea6fcab986573f70e17f6d3484.bindTooltip(
+                `<div>
+                     🏞 Kakinada Dam: 59.6%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72dc7eea6fcab986573f70e17f6d3484.setIcon(icon_909d3bade2d54c4a3a8f8b77b53e6d26);
+            
+    
+            var circle_marker_5bdaa150a43b72d6fb62fcd1f468bd68 = L.circleMarker(
+                [15.5057, 80.0499],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.002639153099153, "stroke": true, "weight": 3}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+        var popup_210dbb13ecc4a03fa58472ea36d1c6ee = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dce0c99144fbcaf5aff3118482b89143 = $(`<div id="html_dce0c99144fbcaf5aff3118482b89143" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial; width:220px">           <h4 style="color:#1a73e8; margin:0">💧 Ongole</h4>           <hr style="margin:5px 0">           <b>🌧 Rainfall (today):</b> 1.9 mm<br>           <b>🏞 Reservoir Level:</b> 59.5%<br>           <b>🌊 Flood Risk:</b>             <span style="color:green">               0%             </span><br>           <b>🪨 Groundwater Depth:</b> 12.5 m<br>           <b>🧪 Water Quality:</b>             <span style="color:green">Safe</span>         </div>         </div>`)[0];
+                popup_210dbb13ecc4a03fa58472ea36d1c6ee.setContent(html_dce0c99144fbcaf5aff3118482b89143);
+            
+        
+
+        circle_marker_5bdaa150a43b72d6fb62fcd1f468bd68.bindPopup(popup_210dbb13ecc4a03fa58472ea36d1c6ee)
+        ;
+
+        
+    
+    
+            circle_marker_5bdaa150a43b72d6fb62fcd1f468bd68.bindTooltip(
+                `<div>
+                     Ongole — Flood Risk: 0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3435bf971f57001671fb4d386b2e0e42 = L.marker(
+                [15.5857, 80.12989999999999],
+                {
+}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+            var icon_944fcddea139a40767f5ff4d8deb594c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3435bf971f57001671fb4d386b2e0e42.bindTooltip(
+                `<div>
+                     🏞 Ongole Dam: 59.5%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3435bf971f57001671fb4d386b2e0e42.setIcon(icon_944fcddea139a40767f5ff4d8deb594c);
+            
+    
+            var circle_marker_d2e546380bd9e7bd91d16fefd738e08e = L.circleMarker(
+                [16.7107, 81.0952],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.002773753949441, "stroke": true, "weight": 3}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+        var popup_695dae48f066944efa71c238a054c4f9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_245476b8c57fd2e47f836f35cfe780b1 = $(`<div id="html_245476b8c57fd2e47f836f35cfe780b1" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial; width:220px">           <h4 style="color:#1a73e8; margin:0">💧 Eluru</h4>           <hr style="margin:5px 0">           <b>🌧 Rainfall (today):</b> 23.2 mm<br>           <b>🏞 Reservoir Level:</b> 60.8%<br>           <b>🌊 Flood Risk:</b>             <span style="color:green">               0%             </span><br>           <b>🪨 Groundwater Depth:</b> 14.2 m<br>           <b>🧪 Water Quality:</b>             <span style="color:green">Safe</span>         </div>         </div>`)[0];
+                popup_695dae48f066944efa71c238a054c4f9.setContent(html_245476b8c57fd2e47f836f35cfe780b1);
+            
+        
+
+        circle_marker_d2e546380bd9e7bd91d16fefd738e08e.bindPopup(popup_695dae48f066944efa71c238a054c4f9)
+        ;
+
+        
+    
+    
+            circle_marker_d2e546380bd9e7bd91d16fefd738e08e.bindTooltip(
+                `<div>
+                     Eluru — Flood Risk: 0%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_71affcdf49cd5bcf100ba6f55d907f1c = L.marker(
+                [16.790699999999998, 81.1752],
+                {
+}
+            ).addTo(map_242e0361bf1a096ea871b6abddfe71b2);
+        
+    
+            var icon_1dcc6aba87196d40f145276969f1bf41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_71affcdf49cd5bcf100ba6f55d907f1c.bindTooltip(
+                `<div>
+                     🏞 Eluru Dam: 60.8%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_71affcdf49cd5bcf100ba6f55d907f1c.setIcon(icon_1dcc6aba87196d40f145276969f1bf41);
+            
+</script>
+</html>
